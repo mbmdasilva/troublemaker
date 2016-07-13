@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trouble Maker App</title>
+
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+    <link href="css/troubleMaker.css" rel="stylesheet">
+
+    <script>
+        TR = {};
+        TR.useMockData = true;
+    </script>
+
+    <script src="javascript/jquery-2.1.4.min.js"></script>
+    <script src="javascript/jquery-ui.min.js"></script>
+    <script src="data/mockData.js"></script>
+    <script src="javascript/serviceClient.js"></script>
+    <script src="javascript/troubleMakerView.js"></script>
+
+    <style></style>
+</head>
+<body>
+    <header>
+        <label for="namespacesSearch">Namespaces <input id="namespacesSearch"></label>
+    </header>
+    <div id="mainContent">
+        <section id="applications"></section>
+        <div id="rightPanel">
+            <section id="actions" class="disableActions">
+                <header>
+                    <label>Action status: </label>
+                    <span id="actionStatus"></span>
+                </header>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="restart">Restart</button>
+                <button id="other">Other</button>
+            </section>
+            <section id="logsContainer">
+                <header id="logsHeader">
+                    <label>Logs for </label>
+                    <span id="logsName"></span>
+                </header>
+                <article id="logs">
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                    <p>hi</p>
+                </article>
+            </section>
+        </div>
+    </div>
+    <script>
+        TR.troubleMakerView.initialise();
+    </script>
+</body>
+</html>

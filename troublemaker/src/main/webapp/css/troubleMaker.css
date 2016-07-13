@@ -1,0 +1,117 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #454545;
+}
+
+header {
+    padding: 15px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid black;
+    color: lightgrey;
+    font-family: Arial;
+}
+header b {
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+#mainContent {
+    height: 100%;
+    padding-top: 53px;
+    box-sizing: border-box;
+}
+
+#applications {
+    overflow: auto;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 15px;
+}
+
+#rightPanel {
+    box-sizing: border-box;
+    display:inline-block;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#applications li {
+    float: left;
+}
+
+#applications ul {
+    height: auto !important;
+}
+
+#actions {
+    box-sizing:border-box;
+    padding-top: 49px;
+    height: 35%;
+}
+
+#logsContainer {
+    box-sizing: border-box;
+    height: 65%;
+    padding: 49px 0px 15px 0px;
+}
+
+#actions header {
+    top: 51px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#logsContainer header {
+    top: -50px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#actions button {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+#actions.disableActions button {
+    disabled: true;
+}
+
+#logs {
+    box-sizing: border-box;
+    padding: 0px 15px;
+    overflow: auto;
+    height: 100%;
+    position: relative;
+    top: -50px;
+}
+
+#applications,
+#rightPanel{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#rightPanel {
+    border-right: 2px solid black;
+}
+
+#rightPanel header {
+    border-left: none;
+    border-right: none;
+}
+
+#namespacesSearch {
+    width: 400px;
+    font-size: 14px;
+}
